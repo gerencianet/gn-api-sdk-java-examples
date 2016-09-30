@@ -20,7 +20,7 @@ public class UpdateSubscription {
 		/* ************************************************* */
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "2976");
+		params.put("id", "0");
 
 		Map<String, Object> body = new HashMap<String, Object>();
 		body.put("notification_url", "http://localhost");

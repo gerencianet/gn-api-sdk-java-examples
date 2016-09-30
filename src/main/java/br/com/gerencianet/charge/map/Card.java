@@ -20,7 +20,7 @@ public class Card {
 		/* ************************************************* */ 
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "109322");
+		params.put("id", "0");
 		
 		String paymentToken = "payment_token";
 		

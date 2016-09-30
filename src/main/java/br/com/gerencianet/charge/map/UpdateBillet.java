@@ -20,7 +20,7 @@ public class UpdateBillet {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "109333");
+		params.put("id", "0");
 		
 		Map<String, Object> body = new HashMap<String, Object>();
 		body.put("expire_at", "2020-12-12");

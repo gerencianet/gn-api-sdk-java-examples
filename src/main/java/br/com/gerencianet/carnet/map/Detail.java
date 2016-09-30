@@ -21,7 +21,7 @@ public class Detail {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "10311");
+		params.put("id", "0");
 
 		try {
 			Gerencianet gn = new Gerencianet(options);

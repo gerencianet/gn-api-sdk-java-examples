@@ -22,7 +22,7 @@ public class CreateSubscription {
 
 		/* ************************************************* */ 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "2262");
+		params.put("id", "0");
 
 		JSONArray items = new JSONArray();
 

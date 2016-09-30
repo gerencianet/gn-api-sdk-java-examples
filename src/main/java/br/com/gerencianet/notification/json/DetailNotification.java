@@ -22,7 +22,7 @@ public class DetailNotification {
 		/* ************************************************* */
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-        params.put("token", "JAISPakjdoadp4687645sad");
+        params.put("token", "token recebido");
 
         try {
             Gerencianet gn = new Gerencianet(options);

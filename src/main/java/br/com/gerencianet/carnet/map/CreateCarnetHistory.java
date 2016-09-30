@@ -21,7 +21,7 @@ public class CreateCarnetHistory {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "10311");
+		params.put("id", "0");
 
 		Map<String, Object> body = new HashMap<String, Object>();
 		body.put("description", "This carnet is about a service");

@@ -22,7 +22,7 @@ public class CancelSubscription {
 		/* ************************************************* */ 
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "2948");
+		params.put("id", "0");
 
 		try {
 		    Gerencianet gn = new Gerencianet(options);

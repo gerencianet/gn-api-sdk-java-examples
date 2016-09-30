@@ -23,7 +23,7 @@ public class CancelCarnet {
 		/* ************************************************* */ 
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "10246");
+		params.put("id", "0");
 		
 		try {
 			Gerencianet gn = new Gerencianet(options);

@@ -21,7 +21,7 @@ public class UpdateSubscription {
 		/* ************************************************* */
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "2948");
+		params.put("id", "0");
 
 		JSONObject body = new JSONObject();
 		body.put("notification_url", "http://localhost");

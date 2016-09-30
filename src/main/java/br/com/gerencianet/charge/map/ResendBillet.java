@@ -20,7 +20,7 @@ public class ResendBillet {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "109332");
+		params.put("id", "0");
 		
 		Map<String, Object> body = new HashMap<String, Object>();
 		body.put("email", "oldbuck@gerencianet.com.br");

@@ -22,7 +22,7 @@ public class CreateChargeHistory {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "109248");
+		params.put("id", "0");
 		
 		JSONObject body = new JSONObject();
 		body.put("description", "This charge was not fully paid");

@@ -22,7 +22,7 @@ public class UpdateMetadata {
 		/* ************************************************* */ 
 
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "109252");
+		params.put("id", "0");
 		
 		JSONObject body = new JSONObject();
 		body.put("custom_id", "Product 0001");

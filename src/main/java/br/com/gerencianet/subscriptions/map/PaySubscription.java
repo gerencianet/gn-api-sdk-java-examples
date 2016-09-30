@@ -20,7 +20,7 @@ public class PaySubscription {
 		/* ************************************************* */
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("id", "2976");
+		params.put("id", "0");
 
 		Map<String, Object> customer = new HashMap<String, Object>();
 		customer.put("name", "Gorbadoc Oldbuck");
