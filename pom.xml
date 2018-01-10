@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>br.com.gerencianet.gnsdk</groupId>
 			<artifactId>gn-api-sdk-java</artifactId>
-			<version>0.2.0</version>
+			<version>0.2.3</version>
 		</dependency>
 	</dependencies>
 </project>
