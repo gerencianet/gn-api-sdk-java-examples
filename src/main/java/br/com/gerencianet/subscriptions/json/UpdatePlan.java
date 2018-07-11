@@ -1,4 +1,4 @@
-package br.com.gerencianet.charge.json;
+package br.com.gerencianet.subscriptions.json;
 
 import java.util.HashMap;
 
@@ -8,7 +8,7 @@ import br.com.gerencianet.Credentials;
 import br.com.gerencianet.gnsdk.Gerencianet;
 import br.com.gerencianet.gnsdk.exceptions.GerencianetException;
 
-public class UpdateBillet {
+public class UpdatePlan {
 	public static void main(String[] args) {
 		/* *********  Set credential parameters ******** */
 
