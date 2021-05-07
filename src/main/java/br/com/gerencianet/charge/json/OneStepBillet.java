@@ -18,7 +18,7 @@ public class OneStepBillet {
 		JSONObject options = new JSONObject();
 		options.put("client_id", credentials.getClientId());
 		options.put("client_secret", credentials.getClientSecret());
-		options.put("partner_token", credentials.getPartnerToken());
+		//options.put("partner_token", credentials.getPartnerToken());
 		options.put("sandbox", credentials.isSandbox());
 
 		/* ************************************************* */ 		
