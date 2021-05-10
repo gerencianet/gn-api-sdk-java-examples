@@ -2,7 +2,7 @@
 
 This project has some java file examples to test the Java SDK for Gerencianet API.
 
-In the certs folder, insert your approval / production certificate
+In the certs folder, insert your homologation / production certificate
 
 ## Requirements
 * Java >= 7.0
