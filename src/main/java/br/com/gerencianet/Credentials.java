@@ -10,6 +10,7 @@ public class Credentials
 {
 	private String clientId;
 	private String clientSecret;
+	private String certificadoPix;
 	private boolean sandbox;
 	private boolean debug;
 	
@@ -26,6 +27,7 @@ public class Credentials
 		
 		this.clientId = credentials.getString("client_id");
 		this.clientSecret = credentials.getString("client_secret");
+		this.certificadoPix = credentials.getString("pix_cert");
 		this.sandbox = credentials.getBoolean("sandbox");
 		this.debug = credentials.getBoolean("debug");
 	}
@@ -38,6 +40,10 @@ public class Credentials
 		return clientSecret;
 	}
 
+	public String getCertificadoPix() {
+		return certificadoPix;
+	}
+
 	public boolean isSandbox() {
 		return sandbox;
 	}
@@ -45,6 +51,5 @@ public class Credentials
 	public boolean isDebug() {
 		return debug;
 	}
-	
-	
+
 }
