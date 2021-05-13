@@ -1,4 +1,4 @@
-package br.com.gerencianet.defaults.extra.map;
+package br.com.gerencianet.defaults.others.map;
 
 import java.util.HashMap;
 import java.util.Map;

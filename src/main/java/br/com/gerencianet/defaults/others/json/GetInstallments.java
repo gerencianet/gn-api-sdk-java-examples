@@ -1,4 +1,4 @@
-package br.com.gerencianet.defaults.extra.json;
+package br.com.gerencianet.defaults.others.json;
 
 import java.util.HashMap;
 
