@@ -1,4 +1,4 @@
-package br.com.gerencianet.defaults.marketplace.json;
+package br.com.gerencianet.defaults.charge.json;
 
 import java.util.HashMap;
 

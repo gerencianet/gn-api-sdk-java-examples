@@ -15,7 +15,7 @@ public class PixDetailCharge {
 		HashMap<String, Object> options = new HashMap<String, Object>();
 		options.put("client_id", credentials.getClientId());
 		options.put("client_secret", credentials.getClientSecret());
-		options.put("pix_cert", credentials.getCertificadoPix());
+		options.put("certificate", credentials.getCertificate());
 		options.put("sandbox", credentials.isSandbox());
 
     	HashMap<String, String> params = new HashMap<String, String>();

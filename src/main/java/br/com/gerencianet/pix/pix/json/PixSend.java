@@ -16,8 +16,11 @@ public class PixSend {
 		JSONObject options = new JSONObject();
 		options.put("client_id", credentials.getClientId());
 		options.put("client_secret", credentials.getClientSecret());
-		options.put("pix_cert", credentials.getCertificadoPix());
+		options.put("certificate", credentials.getCertificate());
 		options.put("sandbox", credentials.isSandbox());
+
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("idEnvio", " ");
 
 		JSONObject body = new JSONObject();
 		body.put("valor", "0.01");
@@ -26,7 +29,7 @@ public class PixSend {
 
 			try {
 				Gerencianet gn = new Gerencianet(options);
-				JSONObject response = gn.call("pixSend", new HashMap<String,String>(), body);
+				JSONObject response = gn.call("pixSend", params, body);
 				System.out.println(response);
 			}catch (GerencianetException e){
 				System.out.println(e.getError());

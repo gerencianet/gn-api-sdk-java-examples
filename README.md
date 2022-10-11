@@ -2,13 +2,11 @@
 
 This project has some java file examples to test the Java SDK for Gerencianet API.
 
-In the certs folder, insert your homologation / production certificate
-
 ## Requirements
 * Java >= 7.0
 
 ## Running examples
-Update src/main/resources/credentials.json file with client_id and client_secret of your application.
+Update src/main/resources/credentials.json file with client_id, client_secret and certificate of your application.
 
 You can run using any Java IDE, like Eclipse or Netbeans, with Maven plugin installed, and follow these steps:
 1. clone this git repository in a local directory of your choice;
