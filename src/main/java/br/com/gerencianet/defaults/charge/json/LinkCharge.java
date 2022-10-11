@@ -1,4 +1,4 @@
-package br.com.gerencianet.defaults.extra.json;
+package br.com.gerencianet.defaults.charge.json;
 
 import java.util.HashMap;
 
@@ -8,9 +8,9 @@ import br.com.gerencianet.Credentials;
 import br.com.gerencianet.gnsdk.Gerencianet;
 import br.com.gerencianet.gnsdk.exceptions.GerencianetException;
 
-public class GetInstallments {
+public class LinkCharge {
 	public static void main(String[] args) {
-		/* *********  Set credential parameters ******** */
+		/* *********  Set credentials parameters ******** */
 
 		Credentials credentials = new Credentials();
 
@@ -19,16 +19,23 @@ public class GetInstallments {
 		options.put("client_secret", credentials.getClientSecret());
 		options.put("sandbox", credentials.isSandbox());
 
-		/* ************************************************* */
+		/* ************************************************* */ 
 		
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("total", "20000");
-		params.put("brand", "visa");
+		params.put("id", "0");
+		
+		JSONObject body = new JSONObject();
+		body.put("billet_discount", 10);
+		body.put("card_discount", 10);
+		body.put("message", "link test");
+		body.put("expire_at", "2018-12-12");
+		body.put("request_delivery_address", false);
+		body.put("payment_method", "all");
 		
 		try {
 		    Gerencianet gn = new Gerencianet(options);
-		    JSONObject installments = gn.call("getInstallments", params, new JSONObject());
-		    System.out.println(installments);
+		    JSONObject response = gn.call("linkCharge", params, body);
+		    System.out.println(response);
 		}catch (GerencianetException e){
 		    System.out.println(e.getCode());
 		    System.out.println(e.getError());

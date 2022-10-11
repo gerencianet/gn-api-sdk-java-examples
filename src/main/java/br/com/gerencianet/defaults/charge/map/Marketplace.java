@@ -1,4 +1,4 @@
-package br.com.gerencianet.defaults.marketplace.map;
+package br.com.gerencianet.defaults.charge.map;
 
 import java.util.ArrayList;
 import java.util.HashMap;

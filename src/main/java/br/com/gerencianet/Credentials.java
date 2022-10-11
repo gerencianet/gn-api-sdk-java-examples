@@ -2,18 +2,16 @@ package br.com.gerencianet;
 
 import java.io.IOException;
 import java.io.InputStream;
-
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-public class Credentials 
-{
+public class Credentials {
 	private String clientId;
 	private String clientSecret;
-	private String certificadoPix;
+	private String certificate;
 	private boolean sandbox;
 	private boolean debug;
-	
+
 	public Credentials() {
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 		InputStream credentialsFile = classLoader.getResourceAsStream("credentials.json");
@@ -24,10 +22,10 @@ public class Credentials
 		} catch (IOException e) {
 			System.out.println("Impossible to close file credentials.json");
 		}
-		
+
 		this.clientId = credentials.getString("client_id");
 		this.clientSecret = credentials.getString("client_secret");
-		this.certificadoPix = credentials.getString("pix_cert");
+		this.certificate = credentials.getString("certificate");
 		this.sandbox = credentials.getBoolean("sandbox");
 		this.debug = credentials.getBoolean("debug");
 	}
@@ -40,8 +38,8 @@ public class Credentials
 		return clientSecret;
 	}
 
-	public String getCertificadoPix() {
-		return certificadoPix;
+	public String getCertificate() {
+		return certificate;
 	}
 
 	public boolean isSandbox() {

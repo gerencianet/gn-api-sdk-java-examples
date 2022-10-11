@@ -1,18 +1,20 @@
-package br.com.gerencianet.defaults.charge.map;
+package br.com.gerencianet.defaults.charge.json;
 
 import java.util.HashMap;
-import java.util.Map;
+
+import org.json.JSONObject;
+
 import br.com.gerencianet.Credentials;
 import br.com.gerencianet.gnsdk.Gerencianet;
 import br.com.gerencianet.gnsdk.exceptions.GerencianetException;
 
-public class Link {
+public class UpdateChargeLink {
 	public static void main(String[] args) {
-		/* *********  Set credentials parameters ******** */
+		/* *********  Set credential parameters ******** */
 
 		Credentials credentials = new Credentials();
 
-		HashMap<String, Object> options = new HashMap<String, Object>();
+		JSONObject options = new JSONObject();
 		options.put("client_id", credentials.getClientId());
 		options.put("client_secret", credentials.getClientSecret());
 		options.put("sandbox", credentials.isSandbox());
@@ -21,18 +23,18 @@ public class Link {
 
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("id", "0");
-
-		Map<String, Object> body = new HashMap<String, Object>();
+		
+		JSONObject body = new JSONObject();
 		body.put("billet_discount", 0);
 		body.put("card_discount", 0);
 		body.put("message", "link test");
-		body.put("expire_at", "2018-12-12");
+		body.put("expire_at", "2022-12-12");
 		body.put("request_delivery_address", false);
 		body.put("payment_method", "all");
 
 		try {
 			Gerencianet gn = new Gerencianet(options);
-			Map<String, Object> response = gn.call("linkCharge", params, body);
+			JSONObject response = gn.call("updateChargeLink", params, body);
 			System.out.println(response);
 		}catch (GerencianetException e){
 			System.out.println(e.getCode());
